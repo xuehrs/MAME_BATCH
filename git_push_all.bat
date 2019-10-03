@@ -16,6 +16,7 @@ cd /d %projectpath%
 ::git log
 git add *
 git commit -m %CommitContent%
+::git commit -a %CommitContent%
 git push origin master
 
 echo.
