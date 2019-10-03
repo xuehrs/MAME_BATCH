@@ -3,6 +3,10 @@
 
 以后可能会慢慢添加fbneo，hbmame，mamep等等相关教程。
 
+带Beta的表示没有经过完全测试，等搞定之后，会转到正式版。
+
+在这里提前祝大家元旦快乐！！！
+
 [相关PPX论坛](https://www.ppxclub.com/forum.php?mod=viewthread&tid=693831&page=1&extra=#pid8114341)
 
 
