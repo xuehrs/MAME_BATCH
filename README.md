@@ -8,7 +8,11 @@
 
 
 相关编译资料
-		http://arcade.mameworld.info/
-		https://www.mamedev.org/tools/
-		https://github.com/mamedev/buildtools/releases
-		https://docs.mamedev.org/initialsetup/compilingmame.html
+
+http://arcade.mameworld.info/
+
+https://www.mamedev.org/tools/
+
+https://github.com/mamedev/buildtools/releases
+
+https://docs.mamedev.org/initialsetup/compilingmame.html
