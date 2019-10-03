@@ -1,0 +1,8 @@
+2019/10/04 周五  7:40:10.33 compile_mess_mini_32-bit compile build environment OK  
+2019/10/04 周五  7:40:10.43 compile_mess_mini_32-bit NO 
+复制了 0 个文件
+2019/10/04 周五  7:40:10.49 compile_arcade_32-bit NO 
+复制了 0 个文件
+2019/10/04 周五  7:40:11.16 compile_mess_mini_64-bit compile build environment OK  
+2019/10/04 周五  7:40:11.20 compile_mess_mini_64-bit NO 
+复制了 0 个文件
