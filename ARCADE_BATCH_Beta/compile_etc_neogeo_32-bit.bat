@@ -10,6 +10,6 @@ make SOURCES=src/mame/drivers/neogeo.cpp -j5 SUBTARGET=etc OSD=winui PTR64=0 BUI
 cd %~dp0
 if exist arcade32.exe (echo %date% %time% %~n0 OK! >> 程序编译情况.txt) else (echo %date% %time% %~n0 NO! >> 程序编译情况.txt)
 ren arcade32.exe arcade32_etc_neogeo.exe
-xcopy /y /F arcade32_etc_neogeo.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
+xcopy /y /f arcade32_etc_neogeo.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
 ::pause
 

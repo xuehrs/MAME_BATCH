@@ -10,6 +10,6 @@ make -j5 SUBTARGET=arcade OSD=winui PTR64=0 BUILDDIR=build_arcade
 cd %~dp0
 if exist arcade32.exe (echo %date% %time% %~n0 OK! >> 程序编译情况.txt) else (echo %date% %time% %~n0 NO! >> 程序编译情况.txt)
 
-xcopy /y /F arcade32.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
+xcopy /y /f arcade32.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
 ::pause
 

@@ -10,6 +10,6 @@ make -j5 SUBTARGET=etc OSD=winui PTR64=0 BUILDDIR=build_etc
 cd %~dp0
 if exist arcade32.exe (echo %date% %time% %~n0 OK! >> 程序编译情况.txt) else (echo %date% %time% %~n0 NO! >> 程序编译情况.txt)
 ren arcade32.exe arcade32_etc.exe
-xcopy /y /F arcade32_etc.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
+xcopy /y /f arcade32_etc.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
 ::pause
 
