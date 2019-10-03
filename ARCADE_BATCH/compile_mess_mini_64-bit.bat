@@ -11,6 +11,7 @@ cd %~dp0
 if exist arcade64.exe (echo %date% %time% %~n0 OK! >> 程序编译情况.txt) else (echo %date% %time% %~n0 NO! >> 程序编译情况.txt)
 ren arcade64.exe arcade64_mess_mini.exe
 xcopy /y /f arcade64_mess_mini.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
+if errorlevel 1 ( echo %date% %time% %~n0 Program Set Name NO! >> 程序编译情况.txt ) else ( echo %date% %time% %~n0 Program Set Name OK! >> 程序编译情况.txt )
 pause
 exit -1
 
