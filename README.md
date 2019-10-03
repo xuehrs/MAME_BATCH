@@ -20,3 +20,7 @@ https://www.mamedev.org/tools/
 https://github.com/mamedev/buildtools/releases
 
 https://docs.mamedev.org/initialsetup/compilingmame.html
+
+MAME Rom Hack 相关资料
+
+http://www.jeffsromhack.com/index.html
