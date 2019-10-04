@@ -20,8 +20,9 @@ git add *
 git commit -m %CommitContent%
 ::git commit -a %CommitContent%
 git push origin master
-git log -1 --stat
-git log *
+::显示最近三次文件变动
+::git log -3 --stat
+::显示详细文件变动内容
 git log -p *
 
 echo.
