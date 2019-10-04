@@ -1,11 +1,13 @@
 @echo off
+setlocal enabledelayedexpansion
+::set PATH=%~dp0\MinGW\bin;%PATH%
 title %~dp0
 	
 ::此处修改commit的备注
 set CommitContent="%date% %time%"
 
 
-::此处设置Git 目录的路径
+::此处设置Git仓库目录的路径
 set projectpath=D:\BatScript\xuehrs\MAME_BATCH
 
 xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\ARCADE_BATCH_Beta\
