@@ -13,3 +13,5 @@ ren arcade32.exe arcade32_tiny.exe
 xcopy /y /f arcade32_tiny.exe %~dp0\ArcadeProgramFiles\ >> 程序编译情况.txt
 pause
 
+
+::OSD=winui,参数有windows, sdl, etc.什么意思？我再出个别的版本看看
