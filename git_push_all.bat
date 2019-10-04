@@ -1,7 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
-::set PATH=%~dp0\MinGW\bin;%PATH%
-title %~dp0
+set path=D:\Program Files\Git\usr\bin;%PATH%
+title %~dp0 %-n0
 	
 ::此处修改commit的备注
 set CommitContent="%date% %time%"

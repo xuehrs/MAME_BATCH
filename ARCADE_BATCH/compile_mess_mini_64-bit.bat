@@ -3,7 +3,7 @@
 ::里面的内容归我维护就好,如果你看得懂，可以自己改下。
 
 setlocal enabledelayedexpansion
-::脚本互转系统位数，该下面三个就可以了
+::脚本互转系统位数，改下面三个就可以了
 set CONFIG_ARCHITECTURE=x64
 set gccv="8.3.0"
 set msys="E:\EMU_SRC\compile_msys\msys64-32-2019-03-25\win32\env.bat"
