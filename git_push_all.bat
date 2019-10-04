@@ -19,6 +19,7 @@ cd /d %projectpath%
 
 
 ::哈哈1发发打发士大夫
+git config --global core.quotepath false
 
 ::git pull
 ::git log
