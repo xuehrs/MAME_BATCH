@@ -1,6 +1,7 @@
 @echo off
 setlocal enabledelayedexpansion
-set path=D:\Program Files\Git\usr\bin;%PATH%
+::set path=D:\Program Files\Git\usr\bin;%PATH%
+git config --global core.quotepath false
 title %~dp0 %-n0
 	
 ::此处修改commit的备注
