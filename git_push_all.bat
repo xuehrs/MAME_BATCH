@@ -16,6 +16,11 @@ cd /d %projectpath%
 
 git config --global core.quotepath false
 git status -s
+
+git config --global gui.encoding utf-8
+git config --global i18n.commitEncoding utf-8
+git config --global gui.logOutputEncoding utf-8
+
 ::git pull
 ::git log
 git add *
