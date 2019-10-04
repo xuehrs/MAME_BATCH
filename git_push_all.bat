@@ -1,36 +1,43 @@
 @echo off
-setlocal enabledelayedexpansion
-::set path=D:\Program Files\Git\usr\bin;%PATH%
+
+::显示当前路径和文件名称，批处理一多，若是不知道是哪个批处理出问题的那就就麻烦了，不加这个，你不知道这个批处理是干嘛的。
 title %~dp0 %-n0
 	
 ::此处修改commit的备注
 set CommitContent="%date% %time%"
 
-
 ::此处设置Git仓库目录的路径
 set projectpath=D:\BatScript\xuehrs\MAME_BATCH
 
+::从我的源文件拷贝最近更新的脚本
 xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\ARCADE_BATCH_Beta\
 
+::将命令处理目录切换到%projectpath%路径
 cd /d %projectpath%
 
 
 
-
-
-::哈哈1发发打发士大夫
-git config --global core.quotepath false
-
+::从git云仓库获取最新文件
 ::git pull
+
+::查看git最近操作内容
 ::git log
-git add *
+
+::把所有已经变动的文件加入临时缓存
+git add .
+
+::提交变动内容，说明我更新了什么东西。为什么要这样做等等...
 git commit -m %CommitContent%
-::git commit -a %CommitContent%
+
+::将本地文件上传到git云服务器
 git push origin master
+
 ::显示最近三次文件变动
 ::git log -3 --stat
+
 ::显示详细文件变动内容
 git log -p *
 
-echo.
-echo 请按任意键退出. . . && pause > nul
+::有了上面一行命令，它会自动暂停，可以不用下面命令了，按空格键翻页，按q退出命令
+::echo.
+::echo 请按任意键退出. . . && pause > nul
