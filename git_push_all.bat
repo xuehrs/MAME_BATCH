@@ -1,7 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 ::set path=D:\Program Files\Git\usr\bin;%PATH%
-git config --global core.quotepath false
 title %~dp0 %-n0
 	
 ::此处修改commit的备注
@@ -15,6 +14,8 @@ xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\ARCADE_BATCH_Beta\
 
 cd /d %projectpath%
 
+git config --global core.quotepath false
+git status -s
 ::git pull
 ::git log
 git add *
