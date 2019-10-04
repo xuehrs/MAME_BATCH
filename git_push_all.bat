@@ -21,6 +21,8 @@ git config --global gui.encoding gtk
 git config --global i18n.commitEncoding gtk
 git config --global gui.logOutputEncoding gtk
 
+::込込込込
+
 ::git pull
 ::git log
 git add *
