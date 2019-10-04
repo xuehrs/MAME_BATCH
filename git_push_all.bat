@@ -39,8 +39,8 @@ git push origin master
 ::git log -3 --stat
 
 ::显示详细文件变动内容
-git log -p *
+::git log -p *
 
 ::有了上面一行命令，它会自动暂停，可以不用下面命令了，按空格键翻页，按q退出命令
-::echo.
-::echo 请按任意键退出. . . && pause > nul
+echo.
+echo 请按任意键退出. . . && pause > nul
