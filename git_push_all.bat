@@ -18,9 +18,9 @@ git add *
 git commit -m %CommitContent%
 ::git commit -a %CommitContent%
 git push origin master
-git log -1 --stat 
-q
-pause
+git log -1 --stat
+git log  file
+git log -p file
 
 echo.
 echo 请按任意键退出. . . && pause > nul
