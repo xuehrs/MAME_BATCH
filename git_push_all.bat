@@ -14,14 +14,11 @@ xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\ARCADE_BATCH_Beta\
 
 cd /d %projectpath%
 
-git config --global core.quotepath false
-git status -s
 
-git config --global gui.encoding gtk
-git config --global i18n.commitEncoding gtk
-git config --global gui.logOutputEncoding gtk
 
-::¹þ¹þ¹þ¹þ
+
+
+::¹þ¹þ1·¢·¢´ò·¢Ê¿´ó·ò
 
 ::git pull
 ::git log
