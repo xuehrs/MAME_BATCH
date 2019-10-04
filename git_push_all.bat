@@ -18,6 +18,8 @@ git add *
 git commit -m %CommitContent%
 ::git commit -a %CommitContent%
 git push origin master
+git log -3 --stat 
+pasue
 
 echo.
 echo 请按任意键退出. . . && pause > nul
