@@ -18,6 +18,9 @@ xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\xuehrs\MAME_BATCH\A
 ::复制FBNeo相关脚本
 xcopy /y /f D:\BatScript\finalburnneo\FBNeo\*.bat %projectpath%\xuehrs\MAME_BATCH\FBNeo_BATCH_Beta\
 
+::复制messui相关脚本
+xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\xuehrs\MAME_BATCH\MESSUI_BATCH_Beta\
+
 ::将命令处理目录切换到%projectpath%路径
 cd /d %projectpath%\xuehrs\MAME_BATCH\
 
