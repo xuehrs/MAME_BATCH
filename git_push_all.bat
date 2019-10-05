@@ -39,6 +39,11 @@ git commit -m %CommitContent%
 ::git push origin master
 git push
 
+if errorlevel 0 (echo 你很正常)
+else (echo 去你大爷的，没事出什么毛病)
+echo An error occurred during formatting.
+
+
 if %errorlevel% 0 goto gitok
 if %errorlevel% 128 goto gitnofile
 
