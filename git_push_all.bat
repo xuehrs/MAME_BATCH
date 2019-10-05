@@ -42,9 +42,9 @@ git commit -m %CommitContent%
 ::git push origin master
 git push
 
-echo %errorlevel%
-if errorlevel 0 (echo 你很正常)
-if errorlevel 128 (echo 你git到哪个路径了，怎么瞎搞！)
+echo 目前脚本返回码为：%errorlevel%
+if errorlevel 0 ( cls && echo 目前脚本运行正常，没有任何错误！)
+if errorlevel 128 ( cls echo 你git到哪个路径了，怎么这么瞎搞的！)
 
 
 
