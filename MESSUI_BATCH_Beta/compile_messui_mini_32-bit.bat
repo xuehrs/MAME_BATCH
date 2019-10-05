@@ -33,14 +33,13 @@ set SUBTARGET=mess
 set OSD=messui
 
 ::指定BUILD生成路径，在make编译时，将预编译的文件改为你想指定的路径（防止使用不同gcc造成编译异常）
-set BUILDDIR=build_messui
+set BUILDDIR=build_messui_mini
 
 ::更改构建参数（比如sdl和native）必须添加。添加了这个参数，只是编译了不到300个文件。
 set REGENIE=1
 
 ::精简必备，添加这个参数表示我只想单独编译某某cpp驱动，最好要把声音，视频、处理器等驱动加进来
-set SOURCES=src\devices\sound\gb.cpp,src\mame\drivers\gb.cpp,src\mame\machine\gb.cpp,src\mame\drivers\gba.cpp,src\mame\drivers\sms.cpp,src\mame\machine\sms.cpp,src\mame\drivers\megadriv.cpp,src\mame\machine\megadriv.cpp,src\mame\drivers\nes.cpp,src\mame\machine\nes.cpp,src\mame\video\nes.cpp,src\mame\drivers\nes_vt.cpp,src\mame\drivers\ngp.cpp,src\mame\drivers\pce.cpp,src\mame\machine\pce.cpp,src\mame\drivers\sg1000.cpp,src\mame\drivers\snes.cpp,src\mame\machine\snes.cpp,src\mame\audio\wswan.cpp,src\mame\drivers\wswan.cpp,src\mame\machine\wswan.cpp,src\mame\video\wswan.cpp,src\mame\drivers\neogeocd.cpp,src\devices\cpu\saturn\saturn.cpp,src\mame\drivers\saturn.cpp,src\mame\machine\saturn.cpp,src\devices\cpu\psx\psx.cpp,src\devices\video\psx.cpp,src\mame\drivers\psx.cpp,src\mame\machine\psxcd.cpp,src\devices\cpu\psx\psxdasm.cpp,src\mame\drivers\neogeocd.cpp
-
+set SOURCES=src\mame\drivers\nes.cpp,src\mame\machine\nes.cpp,src\mame\video\nes.cpp,src\mame\drivers\nes_vt.cpp
 ::原来的标准编译参数为，用来做参考。可以按照下面代码给上面set设置的参数修正下。
 ::make -j5 PTR64=0 SUBTARGET=mess OSD=messui BUILDDIR=build_messui
 
