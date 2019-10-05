@@ -44,9 +44,6 @@ else (echo 去你大爷的，没事出什么毛病)
 echo An error occurred during formatting.
 
 
-if %errorlevel% 0 goto gitok
-if %errorlevel% 128 goto gitnofile
-
 
 
 echo %errorlevel%
@@ -60,12 +57,7 @@ echo %errorlevel%
 ::有了这条命令，它会自动暂停，可以不用下面命令了，按空格键翻页，按q退出命令
 ::git log -p *
 
-:gitnofile
-echo 您的git没找到你要上传的git仓库
 
-
-:gitok
-echo 您的git运行正常
 
 
 ::修改暂停时候，通知消息“请按任意键继续”为“请按任意键退出”
