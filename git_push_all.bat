@@ -10,10 +10,13 @@ title %~dp0 %-n0
 set CommitContent="%date% %time%"
 
 ::此处设置Git仓库目录的路径
-set projectpath=D:\BatScript\xuehrs\MAME_BATCH
+set projectpath=D:\BatScript
 
 ::从我的源文件拷贝最近更新的脚本
-xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\ARCADE_BATCH_Beta\
+::复制arcade相关脚本
+xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\xuehrs\MAME_BATCH\ARCADE_BATCH_Beta\
+::复制FBNeo相关脚本
+xcopy /y /f D:\BatScript\finalburnneo\FBNeo\*.bat %projectpath%\xuehrs\MAME_BATCH\FBNeo_BATCH_Bbeta\
 
 ::将命令处理目录切换到%projectpath%路径
 cd /d %projectpath%
