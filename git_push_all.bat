@@ -39,16 +39,11 @@ git commit -m %CommitContent%
 ::git push origin master
 git push
 
-if errorlevel 0 (echo 你很正常)
-else (echo 去你大爷的，没事出什么毛病)
-echo An error occurred during formatting.
-
-
-
-
 echo %errorlevel%
-::128??? 为什么报错，不是这个路径？已经解决！
-::0 表示通过~~~
+if errorlevel 0 (echo 你很正常)
+if errorlevel 128 (echo 你git到哪个路径了，怎么瞎搞！)
+
+
 
 ::显示最近三次文件变动
 ::git log -3 --stat
