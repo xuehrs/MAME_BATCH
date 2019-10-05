@@ -39,9 +39,14 @@ git commit -m %CommitContent%
 ::git push origin master
 git push
 
+if %errorlevel% 0 goto end
+if %errorlevel% 128 ( echo 您的git没找到你要上传的git仓库 && goto end ) 
+
+
 
 echo %errorlevel%
 ::128??? 为什么报错，不是这个路径？已经解决！
+::0 表示通过~~~
 
 ::显示最近三次文件变动
 ::git log -3 --stat
@@ -50,9 +55,7 @@ echo %errorlevel%
 ::有了这条命令，它会自动暂停，可以不用下面命令了，按空格键翻页，按q退出命令
 ::git log -p *
 
-::“remote: Resolving deltas: 100%” 表示成功吗？待会添加检测，报警消息，以后慢慢弄
-:: master -> master 应该用这个吧？
-
+:end
 ::修改暂停时候，通知消息“请按任意键继续”为“请按任意键退出”
 echo.
 echo 请按任意键退出. . . && pause > nul
