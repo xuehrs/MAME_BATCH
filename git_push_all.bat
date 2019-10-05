@@ -16,10 +16,10 @@ set projectpath=D:\BatScript
 ::复制arcade相关脚本
 xcopy /y /f D:\BatScript\Robbbert\store1\*.bat %projectpath%\xuehrs\MAME_BATCH\ARCADE_BATCH_Beta\
 ::复制FBNeo相关脚本
-xcopy /y /f D:\BatScript\finalburnneo\FBNeo\*.bat %projectpath%\xuehrs\MAME_BATCH\FBNeo_BATCH_Bbeta\
+xcopy /y /f D:\BatScript\finalburnneo\FBNeo\*.bat %projectpath%\xuehrs\MAME_BATCH\FBNeo_BATCH_Beta\
 
 ::将命令处理目录切换到%projectpath%路径
-cd /d %projectpath%
+cd /d %projectpath%\xuehrs\MAME_BATCH\
 
 
 
@@ -36,7 +36,12 @@ git add .
 git commit -m %CommitContent%
 
 ::将本地文件上传到git云服务器
-git push origin master
+::git push origin master
+git push
+
+
+echo %errorlevel%
+::128??? 为什么报错，不是这个路径？已经解决！
 
 ::显示最近三次文件变动
 ::git log -3 --stat
@@ -46,6 +51,7 @@ git push origin master
 ::git log -p *
 
 ::“remote: Resolving deltas: 100%” 表示成功吗？待会添加检测，报警消息，以后慢慢弄
+:: master -> master 应该用这个吧？
 
 ::修改暂停时候，通知消息“请按任意键继续”为“请按任意键退出”
 echo.
