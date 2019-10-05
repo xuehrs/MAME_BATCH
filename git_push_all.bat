@@ -39,7 +39,7 @@ git commit -m %CommitContent%
 ::git push origin master
 git push
 
-if %errorlevel% 0 goto end
+if %errorlevel% 0 ( echo 您的git运行正常 && goto end ) 
 if %errorlevel% 128 ( echo 您的git没找到你要上传的git仓库 && goto end ) 
 
 
