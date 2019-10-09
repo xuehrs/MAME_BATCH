@@ -70,39 +70,39 @@ goto end
 
 
 :begin1
-echo 你确定继续吗？，[*]任意键继续 / [n]返回上个命令，并回车！
+echo 你确定继续吗？，[*]任意键或回车键继续 / [n]返回上个命令，并回车！
 set /p yesno=
 if /i "!yesno!" == "n" cls && goto :Choose
 echo 你是一个守规则的人，再见！我的陌生人！ && pause > nul && exit
 
 :begin2
-echo 你确定继续吗？，[*]任意键继续 / [n]返回上个命令，并回车！
+echo 你确定继续吗？，[*]任意键或回车键继续 / [n]返回上个命令，并回车！
 set /p yesno=
 if /i "!yesno!" == "n" cls && goto :Choose
 echo 我觉得这世界上比我帅的人不多了！ && pause > nul && exit
 
 :begin3
-echo 你确定继续吗？，[*]任意键继续 / [n]返回上个命令，并回车！
+echo 你确定继续吗？，[*]任意键或回车键继续 / [n]返回上个命令，并回车！
 set /p yesno=
 if /i "!yesno!" == "n" cls && goto :Choose
 start iexplore https://github.com/xuehrs/MAME_BATCH && pause > nul && exit
 
 :begin4
-echo 你确定继续吗？，[*]任意键继续 / [n]返回上个命令，并回车！
+echo 你确定继续吗？，[*]任意键或回车键继续 / [n]返回上个命令，并回车！
 set /p yesno=
 if /i "!yesno!" == "n" cls && goto :Choose
 echo 我是谁？我在哪？我该干什么？ && pause > nul && goto:eof
 goto:eof
 
 :begin5
-echo 你确定继续吗？，[*]任意键继续 / [n]返回上个命令，并回车！
+echo 你确定继续吗？，[*]任意键或回车键继续 / [n]返回上个命令，并回车！
 set /p yesno=
 if /i "!yesno!" == "n" cls && goto :Choose
 echo 正在带你进入PPX相关论坛帖子，不用谢！
 start iexplore https://www.ppxclub.com/forum.php?mod=viewthread&tid=693831&fromuid=585654 && pause > nul && exit
 
 :begin
-echo 你确定继续吗？，[*]任意键继续 / [n]返回上个命令，并回车！
+echo 你确定继续吗？，[*]任意键或回车键继续 / [n]返回上个命令，并回车！
 set /p yesno=
 if /i "!yesno!" == "n" cls && goto :Choose
 ::======我是华丽的分割线===============================================================================
