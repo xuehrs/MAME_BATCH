@@ -3,7 +3,7 @@
 
 它基于仿真器FinalBurn和旧版本的[MAME](https://www.mamedev.org)
 
-此FinalBurn Neo许可协议请查询[FinalBurn Neo官方仓库]( https://github.com/libretro/FBNeo )
+此FinalBurn Neo许可协议请查询[FinalBurn Neo官方仓库](https://github.com/finalburnneo/FBNeo)
 
 [相关PPX论坛](https://www.ppxclub.com/forum.php?mod=viewthread&tid=693831&page=1&extra=#pid8114341)
 
