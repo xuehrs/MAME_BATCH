@@ -24,7 +24,7 @@
 @path=%~dp0\mingw345\bin;%~dp0\Perl64\bin;%~dp0\nasm64;%PATH%
 ```
 
-![image-20191104193140427](C:\Users\lihaidong\AppData\Roaming\Typora\typora-user-images\image-20191104193140427.png)
+![image-20191104193140427](README.assets/image-20191104193140427.png)
 
 备注：vs2019需要安装 Desktop development C++。具体请看与本文件所在的building.txt文件
 
