@@ -24,9 +24,9 @@
 @path=%~dp0\mingw345\bin;%~dp0\Perl64\bin;%~dp0\nasm64;%PATH%
 ```
 
-![image-20191104193140427](image-20191104193140427.png)
+![image-20191104193140427](README.assets/image-20191104193140427.png)
 
-备注：vs2019需要安装 Desktop development C++。具体请看与本文件所在的building.txt文件
+备注：vs2019需要安装 Desktop development C++。具体请看与本文件所在的[building.txt](building.txt)文件
 
 里面提供了各种工具文件下载地址
 
